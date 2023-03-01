@@ -1,7 +1,16 @@
-# ขั้นตอนการ clone
-- ## 1. ทำการ Clone งานมาจาก Repository : deeplearning-project-WhatAmIDoingHere
+# 2WhatAmIDoingHere
+## สมาชิก
+1. นายธงไทย รุจิเวชวงษ์ 6310403982
+2. นายชัชวาลย์ สามา 6310406272
 
-- ## 2. โหลด Dataset จากลิงก์ Google Drive นี้
+# ขั้นตอนการใช้งานโค้ดในโปรเจกต์
+
+- ## 1. ขั้นตอนการ clone
+ทำการ Clone งานมาจาก Github Repository : deeplearning-project-WhatAmIDoingHere <br />
+git clone https://github.com/ChatchawanSama/deeplearning-project-WhatAmIDoingHere.git
+
+- ## 2. โหลด Dataset
+โดยทำการโหลด Dataset จากลิงก์ Google Drive นี้ <br />
 https://drive.google.com/drive/folders/1HA-Db1HNZUPeVe0KsJVexSyASwKIsh42?usp=sharing <br />
 หลังจากที่ทำการโหลด Dataset มาจะได้ 4 โฟลเดอร์ดังนี้ <br />
 * 2.1 heart_sound 
@@ -15,4 +24,7 @@ https://drive.google.com/drive/folders/1HA-Db1HNZUPeVe0KsJVexSyASwKIsh42?usp=sha
 * 2.4 https://www.kaggle.com/datasets/vbookshelf/respiratory-sound-database
 จากนั้นให้ทำการจัดโฟลเดอร์ทั้ง 4 ที่ได้มาให้อยู่ในโฟลเดอร์เดียวกันกับที่เราทำการ clone ไว้ <br />
 
-- ## 3. เปิด Jupyter Notebook ได้โค้ดและ Dataset ที่พร้อมใช้งาน
+- ## 3. เปิด Jupyter Notebook จากนั้นจะได้โค้ดและ Dataset ที่พร้อมใช้งาน
+
+# ความคืบหน้า
+
