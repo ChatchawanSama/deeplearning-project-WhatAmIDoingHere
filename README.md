@@ -27,4 +27,4 @@ https://drive.google.com/drive/folders/1HA-Db1HNZUPeVe0KsJVexSyASwKIsh42?usp=sha
 - ## 3. เปิด Jupyter Notebook จากนั้นจะได้โค้ดและ Dataset ที่พร้อมใช้งาน
 
 # ความคืบหน้า
-
+ในตอนแรกคิดไว้ว่าจะใช้ข้อมูลเสียงที่แปลง Mel Spectrogram แล้วทำการใช้ SpecAugment(ref :https://towardsdatascience.com/audio-deep-learning-made-simple-part-3-data-preparation-and-augmentation-24c6e1f6b52 )
