@@ -24,10 +24,12 @@ https://drive.google.com/drive/folders/1HA-Db1HNZUPeVe0KsJVexSyASwKIsh42?usp=sha
 * 2.4 https://www.kaggle.com/datasets/vbookshelf/respiratory-sound-database
 จากนั้นให้ทำการจัดโฟลเดอร์ทั้ง 4 ที่ได้มาให้อยู่ในโฟลเดอร์เดียวกันกับที่เราทำการ clone ไว้ <br />
 
-- ## 3. เปิด Jupyter Notebook จากนั้นจะได้โค้ดและ Dataset ที่พร้อมใช้งาน
+- ## 3.เปิด Anaconda Prompt (Windows) ใน Mac เปิด Terminal ได้เลย
+จากนั้นทำการสร้าง env 
 ```- conda create -n ชื่อenv```<br />
 ```- conda activate ชื่อenv```<br />
-``` - conda install -c conda-forge jupyterlab```<br />
+จากนั้นทำการ install package ดังนี้
+```- conda install -c conda-forge jupyterlab```<br />
 ```- conda install -c anaconda seaborn```<br />
 ```- conda install -c conda-forge matplotlib```<br />
 ```- conda install -c conda-forge librosa```<br />
@@ -35,4 +37,5 @@ https://drive.google.com/drive/folders/1HA-Db1HNZUPeVe0KsJVexSyASwKIsh42?usp=sha
 ```- conda install -c conda-forge tensorflow```<br />
 ```- conda install -c anaconda pandas```<br />
 ```- conda install -c anaconda numpy ```<br />
-# ความคืบหน้า
+
+- ## 4. เปิด Jupyter Notebook จากนั้นจะได้โค้ดและ Dataset ที่พร้อมใช้งาน
