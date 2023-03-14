@@ -11,7 +11,7 @@ git clone https://github.com/ChatchawanSama/deeplearning-project-WhatAmIDoingHer
 
 - ## 2. โหลด Dataset
 โดยทำการโหลด Dataset จากลิงก์ Google Drive นี้ <br />
-https://drive.google.com/drive/folders/1HA-Db1HNZUPeVe0KsJVexSyASwKIsh42?usp=sharing <br />
+https://drive.google.com/file/d/1tTEBP4imIMSLULt5SPtnwira0FNCBAWO <br />
 หลังจากที่ทำการโหลด Dataset มาจะได้ 4 โฟลเดอร์ดังนี้ <br />
 * 2.1 heart_sound 
 * 2.2 jwyy9np4gv-3 
@@ -40,6 +40,6 @@ https://drive.google.com/drive/folders/1HA-Db1HNZUPeVe0KsJVexSyASwKIsh42?usp=sha
 ```conda install -c anaconda numpy ```<br /><br />
 
 - ## 4. เปิด Jupyter Notebook จากนั้นจะได้โค้ดและ Dataset ที่พร้อมใช้งาน
-```jupyter notebook```<br />
-แล้วทำการ run all ในไฟล์ 2WhatAmIdoingHere_ProjectV3.ipynb
+```jupyter notebook```<br /><br />
+ทำการ run all ในไฟล์ 2WhatAmIdoingHere_ProjectV3.ipynb
 ![image](https://user-images.githubusercontent.com/78588953/225034082-73f1ce80-94e7-43cc-88d3-48b3b248ab2c.png)
