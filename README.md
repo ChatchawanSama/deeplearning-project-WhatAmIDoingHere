@@ -25,10 +25,10 @@ https://drive.google.com/drive/folders/1HA-Db1HNZUPeVe0KsJVexSyASwKIsh42?usp=sha
 จากนั้นให้ทำการจัดโฟลเดอร์ทั้ง 4 ที่ได้มาให้อยู่ในโฟลเดอร์เดียวกันกับที่เราทำการ clone ไว้ <br />
 
 - ## 3.เปิด Anaconda Prompt (Windows) ใน Mac เปิด Terminal ได้เลย
-จากนั้นทำการสร้าง env <br />
+จากนั้นทำการสร้าง env <br /><br />
 ```- conda create -n ชื่อenv```<br />
-```- conda activate ชื่อenv```<br />
-จากนั้นทำการ install package ดังนี้<br />
+```- conda activate ชื่อenv```<br /><br />
+จากนั้นทำการ install package ดังนี้<br /><br />
 ```- conda install -c conda-forge jupyterlab```<br />
 ```- conda install -c anaconda seaborn```<br />
 ```- conda install -c conda-forge matplotlib```<br />
@@ -36,6 +36,6 @@ https://drive.google.com/drive/folders/1HA-Db1HNZUPeVe0KsJVexSyASwKIsh42?usp=sha
 ```- conda install -c anaconda scikit-learn```<br />
 ```- conda install -c conda-forge tensorflow```<br />
 ```- conda install -c anaconda pandas```<br />
-```- conda install -c anaconda numpy ```<br />
+```- conda install -c anaconda numpy ```<br /><br />
 
 - ## 4. เปิด Jupyter Notebook จากนั้นจะได้โค้ดและ Dataset ที่พร้อมใช้งาน
