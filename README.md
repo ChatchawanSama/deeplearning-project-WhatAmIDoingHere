@@ -25,10 +25,10 @@ https://drive.google.com/drive/folders/1HA-Db1HNZUPeVe0KsJVexSyASwKIsh42?usp=sha
 จากนั้นให้ทำการจัดโฟลเดอร์ทั้ง 4 ที่ได้มาให้อยู่ในโฟลเดอร์เดียวกันกับที่เราทำการ clone ไว้ <br />
 
 - ## 3.เปิด Anaconda Prompt (Windows) ใน Mac เปิด Terminal ได้เลย
-จากนั้นทำการสร้าง env 
+จากนั้นทำการสร้าง env <br />
 ```- conda create -n ชื่อenv```<br />
 ```- conda activate ชื่อenv```<br />
-จากนั้นทำการ install package ดังนี้
+จากนั้นทำการ install package ดังนี้<br />
 ```- conda install -c conda-forge jupyterlab```<br />
 ```- conda install -c anaconda seaborn```<br />
 ```- conda install -c conda-forge matplotlib```<br />
