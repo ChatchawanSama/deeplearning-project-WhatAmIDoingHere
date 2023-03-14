@@ -22,7 +22,8 @@ https://drive.google.com/drive/folders/1HA-Db1HNZUPeVe0KsJVexSyASwKIsh42?usp=sha
 * 2.2 https://data.mendeley.com/datasets/jwyy9np4gv/3
 * 2.3 https://www.youtube.com/playlist?list=PLT8Nd8-_R2iD_-GLfSQGJfsY8ZIs_p3kS
 * 2.4 https://www.kaggle.com/datasets/vbookshelf/respiratory-sound-database
-จากนั้นให้ทำการจัดโฟลเดอร์ทั้ง 4 ที่ได้มาให้อยู่ในโฟลเดอร์เดียวกันกับที่เราทำการ clone ไว้ <br />
+จากนั้นให้ทำการจัดโฟลเดอร์ทั้ง 4 ที่ได้มาให้อยู่ในโฟลเดอร์เดียวกันกับที่เราทำการ clone ไว้ ดังรูป <br />
+![image](https://user-images.githubusercontent.com/78588953/225033578-0755dc54-58d9-4053-a567-05f6c2c247cb.png)
 
 - ## 3.เปิด Anaconda Prompt (Windows) ใน Mac เปิด Terminal ได้เลย
 จากนั้นทำการสร้าง env และ activate env <br /><br />
