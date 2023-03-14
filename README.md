@@ -42,3 +42,4 @@ https://drive.google.com/drive/folders/1HA-Db1HNZUPeVe0KsJVexSyASwKIsh42?usp=sha
 - ## 4. เปิด Jupyter Notebook จากนั้นจะได้โค้ดและ Dataset ที่พร้อมใช้งาน
 ```jupyter notebook```<br />
 แล้วทำการ run all ในไฟล์ 2WhatAmIdoingHere_ProjectV3.ipynb
+![image](https://user-images.githubusercontent.com/78588953/225034082-73f1ce80-94e7-43cc-88d3-48b3b248ab2c.png)
