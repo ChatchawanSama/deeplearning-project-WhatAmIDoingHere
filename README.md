@@ -11,7 +11,7 @@ git clone https://github.com/ChatchawanSama/deeplearning-project-WhatAmIDoingHer
 
 - ## 2. โหลด Dataset
 โดยทำการโหลด Dataset จากลิงก์ Google Drive นี้ <br />
-https://drive.google.com/drive/folders/1HA-Db1HNZUPeVe0KsJVexSyASwKIsh42?usp=sharing <br />
+https://drive.google.com/file/d/1tTEBP4imIMSLULt5SPtnwira0FNCBAWO/view?usp=sharing <br />
 หลังจากที่ทำการโหลด Dataset มาจะได้ 4 โฟลเดอร์ดังนี้ <br />
 * 2.1 heart_sound 
 * 2.2 jwyy9np4gv-3 
