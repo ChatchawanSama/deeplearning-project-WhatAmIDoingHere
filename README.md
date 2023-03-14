@@ -25,16 +25,14 @@ https://drive.google.com/drive/folders/1HA-Db1HNZUPeVe0KsJVexSyASwKIsh42?usp=sha
 จากนั้นให้ทำการจัดโฟลเดอร์ทั้ง 4 ที่ได้มาให้อยู่ในโฟลเดอร์เดียวกันกับที่เราทำการ clone ไว้ <br />
 
 - ## 3. เปิด Jupyter Notebook จากนั้นจะได้โค้ดและ Dataset ที่พร้อมใช้งาน
-
+- conda create -n ชื่อenv
+- conda activate ชื่อenv
+- conda install -c conda-forge jupyterlab
+- conda install -c anaconda seaborn
+- conda install -c conda-forge matplotlib
+- conda install -c conda-forge librosa
+- conda install -c anaconda scikit-learn
+- conda install -c conda-forge tensorflow
+- conda install -c anaconda pandas
+- conda install -c anaconda numpy
 # ความคืบหน้า
-ในตอนแรกคิดไว้ว่าจะใช้ข้อมูลเสียงที่แปลง Mel Spectrogram แล้วทำการใช้ SpecAugment คือการปิดปังบางส่วนของภาพ Mel Spectrogram ในการทำ Data Augmentation ผลที่ได้คือ model มีความ underfitting โดยที่ Accuracy Train : 60 % และ Accuracy Test : 60 % จึงทำการลองเปลี่ยนไปใช้ MFCCs แทน Mel Spectrogram และใช้วิธีการ SpecAugment ในการทำ Data Augmentation ผลที่ได้คือ model มีความแม่นยำมากขึ้นซึ่ง accuracy ตอน train และ test อยู่ที่ประมาณ 80 % และสามารถทำนายข้อมูลที่ไม่ได้มีความเกี่ยวข้องในช่วงพัฒนาได้แม่นยำ(ในบางครั้ง) อย่างเช่น เสียงจาก Youtube <br />
-- SpecAugment(ref :https://towardsdatascience.com/audio-deep-learning-made-simple-part-3-data-preparation-and-augmentation-24c6e1f6b52 )<br />
-- ## ปัญหา
-1.ถ้า Model ที่ใช้ MFCCs ไม่ได้ทำการใช้ SpecAugment เพื่อทำ Data Augmentation Accuracy ตอน Train และ Test จะอยู่ที่ 80 % แต่ไม่สามารถทำนายข้อมูลเสียงจาก Youtube ได้เลย อย่างเช่น ทำนายเป็น Healthy ทั้งหมด 18 ไฟล์ จาก 19 ไฟล์<br /><br />
-2.ถ้าดูในไฟล์ .ipynb ของ V1 จะเห็นว่าข้อมูล MFCCs ที่ทำการใช้ SpecAugment ในการทำ Data Augmentation เมื่อนำไปทำนายเสียงจาก Youtube กลับทำนายผลออกมาได้ดีในระดับหนึ่ง แต่ไม่ใช่ว่าทุกครั้งที่ทำการ Train model จะทำนายผลข้อมูลจาก Youtube ได้ดีเหมือนดังในไฟล์ คิดว่าอาจเกิดจากการที่ข้อมูลมีการ shuffle แบบสุ่มทำให้ข้อมูลที่ใช้ในการ Train แต่ละครั้งแตกต่างกันทำให้ผลการทำนายที่ได้แตกต่างกัน ถึงจะมีการตั้ง seed ในการสุ่มไว้ แต่เนื่องจากเรามีการ run code ที่อยู่ใน cell ของการ shuffle ข้อมูลซ้ำๆ ดังนั้น การ shuffle ข้อมูลที่ทำให้ได้ผลดังในไฟล์ V1 ไม่ใช่การ shuffle ครั้งแรก และส่วนใหญ่ที่ทำการเทรนในแต่ละครั้งการทำนายในส่วนข้อมูลจาก Youtube ไม่ได้ดีมากนัก<br /><br />
-3.การทำ SpecAugment เท่าที่ลองค้นหาพบว่ามีทำใช้กับ Mel Spectrogram เท่านั้น ยังไม่มีการทำกับ MFCCs ดังนั้นไม่สามารถการันตีว่า MFCCs สามารถใช้ SpecAugment ในการทำ Data Augment ได้ ตอนนี้จึงสามารถบอกได้แค่ว่าเป็นการเพิ่ม noise ในรูปภาพโดยการปิดปังบางส่วน<br /><br />
-4.ในไฟล์ V2 (ปัจจุบัน) พบว่ามีข้อมูลเสียงบางส่วนสั้นเกินไป อาจเกิดจากการเขียนโค้ดในการดึงข้อมูลที่ผิด หรือ เป็นที่ตัวไฟล์เอง (ยังไม่ได้ตรวจสอบ)<br />
-- ## ปัจจุบัน<br /><br />
-1.กำลังทดลองวิธีในการทำ Data Augmentation อื่นๆ เช่น เพิ่ม noise ในข้อมูลเสียง , time shift กับทั้งไฟล์ .ipynb ที่ใช้ข้อมูลในการ train เป็น MFCCs และ ไฟล์ที่ใช้ Mel Spectrogram ในการ train ปัจจุบันยังพบว่ายังไม่สามารถทำนายเสียงที่มาจาก youtube ได้<br /><br />
-2.สาเหตุที่ไม่สามารถทำนายข้อมูลจาก Youtube ได้ตอนนี้คิดว่า มาจาก 2 ประเด็นหลัก คือ 1.ข้อมูลในการเทรนไม่เพียงพอ ทำให้เมื่อไปทำนายกับเสียงที่มาจาก Youtube ที่มีคุณภาพแตกต่างจากข้อมูลที่ใช้เทรน ทำให้ ไม่สามารถ ทำนายได้ 2. มาจากปัญหาในข้อที่ 4<br /><br />
-
