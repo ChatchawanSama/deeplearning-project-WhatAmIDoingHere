@@ -25,8 +25,9 @@ https://drive.google.com/drive/folders/1HA-Db1HNZUPeVe0KsJVexSyASwKIsh42?usp=sha
 จากนั้นให้ทำการจัดโฟลเดอร์ทั้ง 4 ที่ได้มาให้อยู่ในโฟลเดอร์เดียวกันกับที่เราทำการ clone ไว้ <br />
 
 - ## 3. เปิด Jupyter Notebook จากนั้นจะได้โค้ดและ Dataset ที่พร้อมใช้งาน
-- conda create -n ชื่อenv
-- conda activate ชื่อenv
+```- conda create -n ชื่อenv```
+```- conda activate ชื่อenv```
+```
 - conda install -c conda-forge jupyterlab
 - conda install -c anaconda seaborn
 - conda install -c conda-forge matplotlib
@@ -34,5 +35,5 @@ https://drive.google.com/drive/folders/1HA-Db1HNZUPeVe0KsJVexSyASwKIsh42?usp=sha
 - conda install -c anaconda scikit-learn
 - conda install -c conda-forge tensorflow
 - conda install -c anaconda pandas
-- conda install -c anaconda numpy
+- conda install -c anaconda numpy```
 # ความคืบหน้า
